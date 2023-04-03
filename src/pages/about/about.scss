@@ -1,0 +1,145 @@
+.about {
+  margin-top: 60px;
+
+  &__img {
+    max-width: 870px;
+    width: 50%;
+    height: 100%;
+
+    @media (max-width: 480px) {
+      display: none;
+    }
+  }
+
+  &__box {
+    display: flex;
+    gap: 3%;
+    justify-content: space-between;
+    margin-top: 7vw;
+  }
+
+  &__info {
+    width: 50%;
+    max-width: 570px;
+
+    @media (max-width: 480px) {
+      width: 100%;
+      text-align: center;
+      margin-top: 5vw;
+    }
+  }
+
+  &__text {
+    @media (max-width: 1000px) {
+      margin-top: 5vw;
+    }
+  }
+}
+
+.facts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 4vw;
+
+  &__numb {
+    font-family: "Philosopher";
+    font-weight: 700;
+    font-size: 2.8rem;
+    line-height: 160%;
+    color: #008139;
+    display: block;
+
+    @media (max-width: 1000px) {
+      font-size: 2.13rem;
+    }
+  }
+
+  &__text {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 1.67rem;
+    color: #0b0b0b;
+    max-width: 275px;
+
+    @media (max-width: 1000px) {
+      font-size: 1rem;
+      line-height: 1.2rem;
+    }
+  }
+}
+
+.choose {
+  margin-top: 15vw;
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    gap: 9%;
+
+    @media (max-width: 768px) {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (max-width: 440px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 12vw;
+    }
+  }
+
+  &__item {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 271px;
+    gap: 3vw;
+
+    @media (max-width: 768px) {
+      gap: 6vw;
+    }
+
+    @media (max-width: 440px) {
+      gap: 2vw;
+      max-width: 99%;
+    }
+  }
+
+  &__title {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 1.27rem;
+    line-height: 22px;
+    color: #0b0b0b;
+  }
+
+  &__img-box {
+    height: 33%;
+  }
+
+  &__text-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 5%;
+    flex-direction: column;
+    height: 62%;
+
+    @media (max-width: 768px) {
+      height: 42%;
+    }
+  }
+
+  &__img {
+    max-width: 156px;
+    width: 90%;
+    display: block;
+    margin: auto;
+  }
+}

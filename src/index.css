@@ -1,0 +1,55 @@
+:root {
+  --index: calc(1vw + 1vh);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.87rem;
+  color: #7e7e7e;
+}
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ul li {
+  list-style: none;
+}
+
+.container {
+  max-width: 100vw !important;
+  width: 100%;
+  padding: 0 10vw;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    padding: 0 5%;
+  }
+
+  html {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 4%;
+  }
+
+  html {
+    font-size: 10px;
+  }
+}

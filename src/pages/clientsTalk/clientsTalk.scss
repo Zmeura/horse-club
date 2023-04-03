@@ -1,0 +1,123 @@
+.clients {
+  margin-top: 8vw;
+
+  @media (max-width: 500px) {
+    padding: 2%;
+  }
+}
+
+.clients-card {
+  background: #ffffff;
+  border: 1px solid #eaeaea;
+  box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.11);
+  border-radius: 5px;
+  padding: 8%;
+  font-size: 15px;
+  line-height: 24px;
+  color: #363434;
+  min-height: 270px;
+  display: flex !important;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto 5%;
+  width: 95%;
+
+  &__img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+  }
+
+  &__text {
+    @media (max-width: 400px) {
+      font-size: 13px;
+    }
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5%;
+
+    & h2 {
+      font-family: "Philosopher";
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.slick-arrow,
+.slick-next {
+  position: absolute;
+  top: 47%;
+  transform: translateY(-50%);
+  z-index: 3;
+  font-size: 10px;
+  opacity: 0.8;
+  background: transparent;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(
+    180deg,
+    #9bcfff 0%,
+    #fff8b6 0.01%,
+    #ffc700 100%
+  ) !important;
+  box-shadow: 0px 1px 0px #c89c00;
+
+  &:hover {
+    background: linear-gradient(
+      180deg,
+      #9bcfff 0%,
+      #ffe456 0.01%,
+      #ffb800 100%
+    ) !important;
+  }
+
+  @media (max-width: 1000px) {
+    display: none !important;
+  }
+
+  &::before {
+    content: "<";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 15px;
+    color: #6a5300;
+    font-size: 20px;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  &:hover,
+  &:active {
+    cursor: pointer;
+    background-color: rgb(130, 198, 206);
+  }
+}
+
+.slick-prev {
+  left: -50px;
+}
+
+.slick-next {
+  right: -50px;
+
+  &::before {
+    content: ">";
+  }
+}
+
+.slick-dots {
+  bottom: -4vw;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 0.75;
+  color: #ffc700;
+}

@@ -1,0 +1,156 @@
+.form-s {
+  background-image: url("./../../img/form-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 6% 3% 14%;
+  position: relative;
+  overflow-x: hidden;
+
+  @media (max-width: 768px) {
+    padding-bottom: 63%;
+  }
+
+  &__tree {
+    position: absolute;
+    max-width: 15vw;
+    min-width: 200px;
+    bottom: 0;
+    left: 75%;
+    z-index: 3;
+
+    @media (max-width: 900px) {
+      display: none;
+    }
+  }
+
+  &__girl {
+    position: absolute;
+    width: 100%;
+    min-width: 300px;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    pointer-events: none;
+
+    @media (max-width: 768px) {
+      width: 130%;
+      min-width: 740px;
+      margin-left: -10%;
+    }
+  }
+
+  &__clouds {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 4;
+  }
+}
+
+.form__inp--error {
+  border: 2px solid red !important;
+}
+
+.form {
+  max-width: 470px;
+  min-width: 300px;
+  height: fit-content;
+  text-align: center;
+  margin-left: 55%;
+  background: #ffffff;
+  border: 1px solid #eaeaea;
+  box-shadow: 0px 16px 51px rgba(0, 0, 0, 0.11);
+  border-radius: 5px;
+  padding: 3% 2% 0;
+  position: relative;
+  z-index: 2;
+
+  @media (max-width: 768px) {
+    top: 2%;
+    width: 100%;
+    margin: 0 auto;
+    max-height: 30%;
+    height: 20% !important;
+    padding: 5% 2% 0;
+  }
+
+  &__title {
+    font-family: "Philosopher";
+    font-weight: 400;
+    font-size: 2.33rem;
+    line-height: 2.33rem;
+    text-align: center;
+    color: #363434;
+  }
+
+  &__text {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    padding: 5% 4%;
+  }
+
+  &__inp {
+    display: block;
+    padding: 5%;
+    width: 90%;
+    margin: 3% auto;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #a5a5a5;
+    background: #ffffff;
+    border: 1px solid #8f8f8f;
+    border-radius: 5px;
+  }
+
+  &__label {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2%;
+    width: 90%;
+    margin: 4% auto;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+
+  &__error {
+    text-align: start;
+    margin-top: -4%;
+    font-size: 0.9rem;
+    color: red;
+  }
+
+  &__box {
+    height: 100px;
+  }
+}
+
+label input {
+  display: none;
+}
+
+.custom-check-icon {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ffc700;
+  margin-right: 8px;
+  z-index: 3;
+}
+
+.custom-check-icon::before {
+  content: "✔";
+  position: absolute;
+  display: none;
+  font-size: 20px;
+  color: #008139;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+label input:checked ~ .custom-check-icon::before {
+  display: block;
+}

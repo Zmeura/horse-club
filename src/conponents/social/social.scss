@@ -1,0 +1,43 @@
+.social {
+  display: flex;
+  gap: 1.5vw;
+
+  &__link {
+    width: 40px;
+    height: 40px;
+    transition: all 200ms ease-in-out;
+    background-repeat: no-repeat;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &_facebook {
+      background-image: url("./../../img/svg/facebook.svg");
+
+      &:hover {
+        background-image: url("./../../img/svg/facebook-1.svg");
+      }
+    }
+
+    &_twitter {
+      background-image: url("./../../img/svg/twitter.svg");
+
+      &:hover {
+        background-image: url("./../../img/svg/twitter-1.svg");
+      }
+    }
+
+    &_instagram {
+      background-image: url("./../../img/svg/instagram.svg");
+
+      &:hover {
+        background-image: url("./../../img/svg/instagram-1.svg");
+      }
+    }
+  }
+
+  @media (max-width: 580px) {
+    gap: 3.5vw;
+  }
+}

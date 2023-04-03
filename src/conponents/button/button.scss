@@ -1,0 +1,29 @@
+.button {
+  width: 15vw;
+  height: 3.72vw;
+  min-width: 182px;
+  min-height: 45px;
+  background: linear-gradient(180deg, #9bcfff 0%, #fff383 0.01%, #ffc700 100%);
+  box-shadow: 0px 4px 0px #c89c00;
+  border-radius: 10px;
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 32px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #6a5300;
+
+  &:hover {
+    color: white;
+    cursor: pointer;
+    background: linear-gradient(
+      180deg,
+      #7aa3ca 0%,
+      #72c8e7 0.01%,
+      #68c3f1 100%
+    );
+
+    box-shadow: 0px 4px 0px #007bc8;
+  }
+}
